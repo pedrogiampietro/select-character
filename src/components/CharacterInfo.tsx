@@ -2,6 +2,7 @@ import React from 'react';
 
 type Character = {
 	name: string;
+	imgSrc: string;
 	magicType: 'Fire' | 'Water' | 'Sound' | 'Nature';
 	damage: number;
 	speed: number;
