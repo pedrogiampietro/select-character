@@ -4,12 +4,22 @@ import CharacterInfo from './components/CharacterInfo';
 
 import './App.css';
 
+type Character = {
+	name: string;
+	imgSrc: string;
+	magicType: 'Fire' | 'Water' | 'Sound' | 'Nature';
+	damage: number;
+	speed: number;
+	accuracy: number;
+	armor: number;
+};
+
 const App: React.FC = () => {
 	const [selectedCharacter, setSelectedCharacter] = useState<string | null>(
 		null
 	);
 
-	const characters = [
+	const characters: Character[] = [
 		{
 			name: 'Bloom',
 			imgSrc: '/assets/Bloom/front.png',
