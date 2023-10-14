@@ -41,7 +41,7 @@ const CharacterViewer: React.FC<Props> = ({ character }) => {
 		}
 	};
 
-	const handleMouseLeave = (e: React.MouseEvent<HTMLImageElement>) => {
+	const handleMouseLeave = () => {
 		if (dragStartX.current !== null) {
 			dragStartX.current = null;
 		}
